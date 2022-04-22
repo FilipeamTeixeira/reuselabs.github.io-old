@@ -1,0 +1,184 @@
+{
+  ".svelte-kit/build/runtime/internal/start.js": {
+    "file": "start-f6e67ee1.js",
+    "src": ".svelte-kit/build/runtime/internal/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/build/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/stories backup.svelte",
+      "src/routes/stories copy.svelte",
+      "src/routes/about_us.svelte",
+      "src/routes/research.svelte",
+      "src/routes/stories.svelte",
+      "src/routes/faq_en.svelte",
+      "src/routes/faqs.svelte",
+      "src/routes/map.svelte"
+    ],
+    "css": [
+      "assets/start-a8cd1609.css"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-936421be.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-b8eacdd9.css"
+    ],
+    "assets": [
+      "assets/background-alt.0f9d5115.png",
+      "assets/logo_ugent.ccd6922d.png",
+      "assets/fira-mono-cyrillic-ext-400-normal.b3140dd3.woff2",
+      "assets/fira-mono-all-400-normal.0d19eb5d.woff",
+      "assets/fira-mono-cyrillic-400-normal.046b609f.woff2",
+      "assets/fira-mono-greek-ext-400-normal.8659ae46.woff2",
+      "assets/fira-mono-greek-400-normal.1f8b3a07.woff2",
+      "assets/fira-mono-latin-ext-400-normal.b6331a25.woff2",
+      "assets/fira-mono-latin-400-normal.a2f9dbe8.woff2",
+      "assets/roboto-cyrillic-ext-400-normal.78f525ec.woff2",
+      "assets/roboto-all-400-normal.55110586.woff",
+      "assets/roboto-cyrillic-400-normal.8dd3b91c.woff2",
+      "assets/roboto-greek-400-normal.ede055d1.woff2",
+      "assets/roboto-vietnamese-400-normal.fb56f0e0.woff2",
+      "assets/roboto-latin-ext-400-normal.4e959d91.woff2",
+      "assets/roboto-latin-400-normal.cc46322d.woff2"
+    ]
+  },
+  ".svelte-kit/build/components/error.svelte": {
+    "file": "error.svelte-08c0d41d.js",
+    "src": ".svelte-kit/build/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-81ff75d4.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js"
+    ],
+    "assets": [
+      "assets/banner.e3399a8e.jpg"
+    ]
+  },
+  "src/routes/stories backup.svelte": {
+    "file": "pages/stories backup.svelte-cf77f83f.js",
+    "src": "src/routes/stories backup.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js",
+      "_frdata-39ced9f7.js"
+    ],
+    "css": [
+      "assets/pages/stories backup.svelte-dacadb0d.css"
+    ]
+  },
+  "src/routes/stories copy.svelte": {
+    "file": "pages/stories copy.svelte-f8d7ccfe.js",
+    "src": "src/routes/stories copy.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js",
+      "_frdata-39ced9f7.js"
+    ],
+    "css": [
+      "assets/pages/stories copy.svelte-35bbc88f.css"
+    ]
+  },
+  "src/routes/about_us.svelte": {
+    "file": "pages/about_us.svelte-53309354.js",
+    "src": "src/routes/about_us.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js"
+    ],
+    "css": [
+      "assets/pages/about_us.svelte-725309bd.css"
+    ],
+    "assets": [
+      "assets/train3.b9930794.jpg",
+      "assets/train2.db8f628e.jpg",
+      "assets/train1.9152a080.jpg"
+    ]
+  },
+  "src/routes/research.svelte": {
+    "file": "pages/research.svelte-32b89d06.js",
+    "src": "src/routes/research.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js"
+    ],
+    "assets": [
+      "assets/logo_economics.3baa2144.png",
+      "assets/logo_political.499a21e0.png",
+      "assets/logo_sciences.7f520b75.png"
+    ]
+  },
+  "src/routes/stories.svelte": {
+    "file": "pages/stories.svelte-62861d35.js",
+    "src": "src/routes/stories.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js",
+      "_frdata-39ced9f7.js"
+    ],
+    "css": [
+      "assets/pages/stories backup.svelte-dacadb0d.css"
+    ]
+  },
+  "src/routes/faq_en.svelte": {
+    "file": "pages/faq_en.svelte-283828a1.js",
+    "src": "src/routes/faq_en.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js"
+    ],
+    "css": [
+      "assets/pages/faq_en.svelte-7590e057.css"
+    ]
+  },
+  "src/routes/faqs.svelte": {
+    "file": "pages/faqs.svelte-2b53a4f7.js",
+    "src": "src/routes/faqs.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js",
+      "src/routes/faq_en.svelte"
+    ]
+  },
+  "src/routes/map.svelte": {
+    "file": "pages/map.svelte-8ad8fb7f.js",
+    "src": "src/routes/map.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-3a42b241.js"
+    ]
+  },
+  "_vendor-3a42b241.js": {
+    "file": "chunks/vendor-3a42b241.js"
+  },
+  "_frdata-39ced9f7.js": {
+    "file": "chunks/frdata-39ced9f7.js"
+  }
+}
