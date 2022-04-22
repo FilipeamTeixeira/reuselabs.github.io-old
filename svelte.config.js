@@ -10,7 +10,7 @@ const config = {
 			assets: 'docs'
 		}),
 		paths: {
-			base: dev ? '' : '/Filipeamteixeira/test_svelte',
+			base: dev ? '' : '/reuselabs/reuselabs.github.io',
 		},
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
