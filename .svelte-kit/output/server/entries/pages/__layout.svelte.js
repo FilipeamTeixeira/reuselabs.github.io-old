@@ -23,7 +23,7 @@ const page = {
     return store.subscribe(fn);
   }
 };
-var airplane = "/reuselabs/reuselabs.github.io/internal/assets/background-ce6d75b2.png";
+var airplane = "/internal/assets/background-ce6d75b2.png";
 var navbar_home_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: "span.svelte-1l7wntg{display:inline-block;margin-right:-3px}",

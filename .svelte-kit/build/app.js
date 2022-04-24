@@ -9,7 +9,7 @@ const template = ({ head, body, assets }) => "<!DOCTYPE html>\n<html lang=\"en\"
 
 let read = null;
 
-set_paths({"base":"/reuselabs/reuselabs.github.io","assets":""});
+set_paths({"base":"","assets":""});
 
 // this looks redundant, but the indirection allows us to access
 // named imports without triggering Rollup's missing import detection

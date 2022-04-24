@@ -14,7 +14,7 @@ const config = {
 			precompress: false
 		}),
 		paths: {
-			base: dev ? '' : '/reuselabs/reuselabs.github.io',
+			base: dev ? '' : '',
 		},
 		// hydrate the <div id="svelte"> element in src/app.html
 		//target: '#svelte'
