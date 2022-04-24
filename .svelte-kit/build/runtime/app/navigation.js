@@ -1,5 +1,7 @@
-import { router } from '../internal/singletons.js';
+import { renderer, router as router$1 } from '../internal/singletons.js';
 import { g as get_base_uri } from '../chunks/utils.js';
+
+const router = /** @type {import('../client/router').Router} */ (router$1);
 
 /**
  * @param {string} name
@@ -10,6 +12,9 @@ function guard(name) {
 	};
 }
 
+const disableScrollHandling = import.meta.env.SSR
+	? guard('disableScrollHandling')
+	: disableScrollHandling_;
 const goto = import.meta.env.SSR ? guard('goto') : goto_;
 const invalidate = import.meta.env.SSR ? guard('invalidate') : invalidate_;
 const prefetch = import.meta.env.SSR ? guard('prefetch') : prefetch_;
@@ -18,8 +23,14 @@ const prefetchRoutes = import.meta.env.SSR ? guard('prefetchRoutes') : prefetchR
 /**
  * @type {import('$app/navigation').goto}
  */
+async function disableScrollHandling_() {
+	renderer.disable_scroll_handling();
+}
+
+/**
+ * @type {import('$app/navigation').goto}
+ */
 async function goto_(href, opts) {
-	// @ts-expect-error
 	return router.goto(href, opts, []);
 }
 
@@ -28,7 +39,6 @@ async function goto_(href, opts) {
  */
 async function invalidate_(resource) {
 	const { href } = new URL(resource, location.href);
-	// @ts-expect-error
 	return router.renderer.invalidate(href);
 }
 
@@ -36,7 +46,6 @@ async function invalidate_(resource) {
  * @type {import('$app/navigation').prefetch}
  */
 function prefetch_(href) {
-	// @ts-expect-error
 	return router.prefetch(new URL(href, get_base_uri(document)));
 }
 
@@ -45,17 +54,12 @@ function prefetch_(href) {
  */
 async function prefetchRoutes_(pathnames) {
 	const matching = pathnames
-		? // @ts-expect-error
-		  router.routes.filter((route) => pathnames.some((pathname) => route[0].test(pathname)))
-		: // @ts-expect-error
-		  router.routes;
+		? router.routes.filter((route) => pathnames.some((pathname) => route[0].test(pathname)))
+		: router.routes;
 
-	const promises = matching
-		.filter((r) => r && r.length > 1)
-		// @ts-expect-error
-		.map((r) => Promise.all(r[1].map((load) => load())));
+	const promises = matching.map((r) => Promise.all(r[1].map((load) => load())));
 
 	await Promise.all(promises);
 }
 
-export { goto, invalidate, prefetch, prefetchRoutes };
+export { disableScrollHandling, goto, invalidate, prefetch, prefetchRoutes };

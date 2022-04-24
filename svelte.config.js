@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static'; // was adapter-auto
+import adapter from 'svelte-adapter-github'; // was @sveltejs/adapter-static
 
 const dev = process.env.NODE_ENV === 'development';
 
@@ -7,13 +7,18 @@ const config = {
 	kit: {
 		adapter: adapter({
 			pages: 'docs',
-			assets: 'docs'
+			assets: 'docs',
+			domain: null,
+			jekyll: false,
+			fallback: null,
+			precompress: false
 		}),
 		paths: {
 			base: dev ? '' : '/reuselabs/reuselabs.github.io',
 		},
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		//target: '#svelte'
+		appDir: 'internal',
 	}
 };
 
