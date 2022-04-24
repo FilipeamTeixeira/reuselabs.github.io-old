@@ -1,6 +1,6 @@
 <script>
     	import { page } from '$app/stores';
-        import airplane from './background.png';
+        import airplane from '/static/pictures/background.png';
 </script>
 
 <div class="uk-position-relative" style = "height: 80vh;"> <!--added new height-->
