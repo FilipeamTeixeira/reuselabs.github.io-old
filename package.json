@@ -16,6 +16,8 @@
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.7",
-    "@fontsource/roboto": "^4.5.5"
+    "@fontsource/roboto": "^4.5.5",
+    "highcharts": "^10.1.0",
+    "highcharts-more": "^0.1.7"
   }
 }

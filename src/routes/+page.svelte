@@ -1,7 +1,3 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <svelte:head>
 	<title>Home</title>
 </svelte:head>
@@ -53,17 +49,33 @@
 </div>
 
 
-<div class="uk-flex uk-flex-column uk-width-1-2 uk-flex-center">
-		<div class="uk-card uk-card-body">
-            <h3 class="uk-card-title">Case Study</h3>
+<!-- <div uk-grid class = "uk-grid-collapse uk-child-width-expand@s">
+<div class="uk-flex uk-flex-column uk-width-1-2 uk-flex-center"> -->
+	
+	<div class="uk-card uk-card-default uk-grid-collapse uk-flex-middle" uk-grid>
+		<div class="uk-flex-last uk-width-1-3@m uk-flex-middle">
+        <img src="pictures/rose.png" class = "uk-align-center" width="300" height="200" alt="" uk-image>
+    </div>
+	<div>
+</div>
+		<div class="uk-card-body uk-width-2-3@m">
+            <h3 class="uk-card-title uk-margin-medium-left uk-margin-medium-right uk-padding-medium">Case Study</h3>
             <p class ="uk-text-justify uk-margin-medium-left uk-margin-medium-right uk-padding-medium" style = "font-family:Helvetica; font-weight:100;">
-            </p>
+				The StationsRadar tool was developed in the context of recently completed doctoral research (December 2019) at Ghent University and Vrije Universiteit Brussel (funded by the Research Foundation).
+				This research, conducted by Freke Caset and entitled "Planning for Nodes, Places, and People: A Strategic Railway Station Development Tool for Flanders".
+				Freke was responsible for the data collection and processing process and for the conceptual development of the radar charts.
+				Furthermore, the intensive cooperation of UGent colleague and doctoral researcher Filipe Teixeira was crucial in the development of this tool.
+				Filipe programmed the tool and designed the website and the graphics. The doctoral research and development of the tool were supervised by Ben Derudder and Frank Witlox (UGent) and Kobe Boussauw (VUB).
+				The reasoning underlying the radar diagrams is based on a long tradition of 'node-place models': a methodology that is mainly applied in the Dutch context to this day.
+				Within this node-location approach, the accessibility of a station environment is not only viewed from a purely transport-technical angle (the node value of a station),
+				but the spatial context in which the station functions (the place value) is also explicitly included. In addition to aspects of 'node' and 'place', characteristics of the station users were also included in this study.
+			</p>
 		</div>
-		<div class="uk-card uk-card-body">
-			<button class="uk-button uk-button-default uk-margin-bottom" type="button" uk-toggle="target: +">Show StationsRadar Video</button>
-			<iframe uk-responsive uk-video hidden width="800" height="600" src="https://www.youtube.com/embed/rYEhQhu5mjQ?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	</div>
+		
+		<!-- <div class="uk-width-1-2 uk-card uk-card-muted uk-card-body uk-card-medium">
+
+		</div> -->
+</div>
 
 
 
